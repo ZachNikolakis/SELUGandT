@@ -11,3 +11,6 @@ git clone
 ```
 git clone https://github.com/Paleantology/SELUGandT.git
 ```  
+mkdir directoryname directoryname
+: Creates multiple directories
+...
