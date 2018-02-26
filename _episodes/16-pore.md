@@ -170,13 +170,13 @@ which is a tabular format that can be read by most Office suites, R, Python, etc
 
 Embed the PDFs you downloaded below. Write a brief sentence about what the plot means and why it might have failed (or how we can improve). Add, commit and push this file, with your changes, to your copy of this repository by the start of class Tuesday.
 
-![Embed your histogram](../fig/histogram) 
+![Embed your histogram](../homework/figs/hist.pdf) 
 
-![Embed your quality ](../fig/qulity) 
+![Embed your quality ](../homework/figs/quality.pdf) 
 
-![Embed your basepairs ](../fig/bp) 
+![Embed your basepairs ](../homework/figs/bp.pdf) 
 
-![Embed your read length chart ](../fig/reads) 
+![Embed your read length chart ](../homework/figs/reads.pdf) 
 
 
 
