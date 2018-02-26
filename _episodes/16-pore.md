@@ -171,12 +171,13 @@ which is a tabular format that can be read by most Office suites, R, Python, etc
 Embed the PDFs you downloaded below. Write a brief sentence about what the plot means and why it might have failed (or how we can improve). Add, commit and push this file, with your changes, to your copy of this repository by the start of class Tuesday.
 
 [PDF of hist](../homework/figs/hist.pdf) 
-
+Histogram depicting the frequency of different sized reads
 [PDF of quality](../homework/figs/quality.pdf) 
-
+This graph represents the quality score of all reads within that specific bin. 
 [PDF of bp graph](../homework/figs/bp.pdf) 
-
+Graph showing the total amount of bp (y-axis) sequenced over time (x-axis)
 [PDF of reads graph](../homework/figs/reads.pdf) 
+Graph showing the total amount of reads (y-axis) sequenced over time (x-axis)
 
 
 
