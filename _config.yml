@@ -51,7 +51,6 @@ collections:
     output: true
   homework:
     output: true
-    permalink: /:path/
 
 # Set the default layout for things in the episodes collection.
 defaults:
