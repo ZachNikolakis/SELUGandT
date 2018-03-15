@@ -21,7 +21,7 @@ objectives:
 
 3. Initialize a git repository in your directory. Create a README. Copy the text from this document into the README. **You will fill out your answers in the README.**
 
-4. Import the data from the class repository into your project repo. You will need to git pull to get updated files. The files will be in the ```homework/takehome``` folder of the class repo. 
+4. Import the data from the class repository into your project repo. You will need to git pull to get updated files. The files will be in the ```_homework/takehome``` folder of the class repo. 
 
 ### Pandas practical
 
