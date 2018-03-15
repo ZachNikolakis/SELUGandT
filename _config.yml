@@ -6,10 +6,10 @@
 carpentry: "dc"
 
 # Overall title for pages.
-title: "Genomics and Transcriptomics Lab"
+title: "Python for ecologists"
 
 # Contact email address.
-email: april.wright@selu.edu
+email: lessons@software-carpentry.org
 
 #------------------------------------------------------------
 # Generic settings (should not need to change).
@@ -61,11 +61,6 @@ defaults:
       type: episodes
     values:
       layout: episode
-
-# Set the default layout for things in the homework collection.
-defaults:
-  - values:
-      root: ..
   - scope:
       path: ""
       type: homework
