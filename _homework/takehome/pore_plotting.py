@@ -26,7 +26,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 
 	parser.add_argument("--data", help="Path to the TSV or CSV file containing your data.")
-	parser.add_argument("--output", help="Path to where you'd like to write the plot file")
+	parser.add_argument("--output", help="Path to directory where you'd like to write the plot files")
 	args = parser.parse_args()
 	if args.data:
 		dataf = args.data
