@@ -26,11 +26,11 @@ def plot_reads_v_qual(min_dat, x, outputfile):
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 
-	parser.add_argument("--input data", help="Path to the TSV or CSV file containing your data.")
+	parser.add_argument("--input", help="Path to the TSV or CSV file containing your data.")
 	parser.add_argument("--output", help="Path to where you'd like to write the plot file")
 	args = parser.parse_args()
 	if args.data:
-		df = args.data
+		df = args.input
 	if args.output:
 		outfile = args.output	
 		
