@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import pandas as pd
 import argparse
@@ -10,29 +12,26 @@ def plot_reads_v_qual(min_dat, x, outputfile):
 	for i in qual1:
 		value = lookup[i]
 		new_list.append(value)
-
 	labels = range(0, len(qual1))
 
-	df = pd.DataFrame(list(zip(labels, new_list)),columns=["position","score"])
-
-	df[['score']] = df[['score']].apply(pd.to_numeric)
-
-	df.plot.scatter(x='position', y='score')
+	new_df = pd.DataFrame(list(zip(labels, new_list)),columns=["position","score"])
+	new_df[['score']] = new_df[['score']].apply(pd.to_numeric)
 	fig = plt.figure()
-	plt.savefig(outputfile)
-
+	new_df.plot.scatter(x='position', y='score')
+	plt.savefig(str(outputfile) + '/' + str(index))
+	plt.close()
 
     
 if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 
-	parser.add_argument("--input", help="Path to the TSV or CSV file containing your data.")
+	parser.add_argument("--data", help="Path to the TSV or CSV file containing your data.")
 	parser.add_argument("--output", help="Path to where you'd like to write the plot file")
 	args = parser.parse_args()
 	if args.data:
-		df = args.input
+		dataf = args.data
 	if args.output:
 		outfile = args.output	
-		
+	df = pd.read_csv(dataf, delimiter="\t")	
 	for index, row in df.iterrows():
 		plot_reads_v_qual(df, index, outfile)	
