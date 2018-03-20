@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="last-modified" content="2018-02-06 10:59:00 -0600">
+    <meta http-equiv="last-modified" content="2018-03-15 15:21:56 -0500">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- meta "search-domain" used for google site search function google_search() -->
     <meta name="search-domain" value="">
@@ -19,7 +19,7 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-    <title>Genomics and Transcriptomics Lab</title>
+    <title>Python for ecologists</title>
   </head>
   <body>
     <div class="container">
@@ -88,8 +88,40 @@
             
             <li><a href="./14-AdvancedGit/">Pull requests and some idiosyncrasies of LONI</a></li>
             
+            <li><a href="./15-BigDataTransfer/">Reading and Writing Genomic Data</a></li>
+            
+            <li><a href="./16-pore/">A More In-Depth Look at Nanopore Data</a></li>
+            
+            <li><a href="./17-short-introduction-to-Python/">Short Introduction to Programming in Python</a></li>
+            
+            <li><a href="./18-starting-with-data/">Starting With Data</a></li>
+            
+            <li><a href="./19-index-slice-subset/">Indexing, Slicing and Subsetting DataFrames in Python</a></li>
+            
+            <li><a href="./20-data-types-and-format/">Data Types and Formats</a></li>
+            
+            <li><a href="./21-merging-data/">Combining DataFrames with Pandas</a></li>
+            
+            <li><a href="./22-loops-and-functions/">Data Workflows and Automation</a></li>
+            
+            <li><a href="./23-visualization-ggplot-python/">Making Plots With ggplot</a></li>
+            
+            <li><a href="./24-putting-it-all-together/">Data Ingest and Visualization - Matplotlib and Pandas</a></li>
+            
           </ul>
         </li>
+        <li class="dropdown">
+          <a href="./" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Homework <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+            <li><a href="./homework/ComputationalDataPractical.html">Computational Data Management Practical</a></li>
+            
+            <li><a href="./homework/HW3.html">HW3</a></li>
+            
+            <li><a href="./homework/HW3_key.html">HW3 Key</a></li>
+            
+          </ul>
+        </li>        
 	
 
 	
@@ -168,6 +200,26 @@ download data to your computer and follow any installation instructions.</p>
   
     
   
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
   
 
 <table>
@@ -181,188 +233,156 @@ download data to your computer and follow any installation instructions.</p>
 
 <tbody>
 <tr>
-<td>1.17.2017</td>
-<td>Syllabus</td>
+<td>1.17.2018</td>
 <td>><a href="https://paleantology.github.io/SELUGandT/00-LONI/">LONI log-in</a></td>
 </tr>
 <tr>
-<td>1.23.2017</td>
-<td>TBD</td>
+<td>1.23.2018</td>
 <td><a href="https://paleantology.github.io/SELUGandT/01-UNIX/">UNIX and Git 1</a></td>
 </tr>
 <tr>
-<td>1.25.2017</td>
-<td>TBD</td>
+<td>1.25.2018</td>
 <td><a href="https://paleantology.github.io/SELUGandT/09-GitIntro/">UNIX and Git 2</a></td>
 </tr>
 <tr>
-<td>1.26.2017</td>
-<td>None</td>
+<td>1.26.2018</td>
 <td>HW 1 Due</td>
 </tr>
 <tr>
-<td>1.30.2017</td>
-<td>----</td>
+<td>1.30.2018</td>
 <td><a href="https://paleantology.github.io/SELUGandT/14-AdvancedGit"> One Last UNIX lesson</td>
 </tr>
 <tr>
-<td>2.2.2017</td>
-<td>----</td>
+<td>2.2.2018</td>
 <td>HW 2 Due</td>
 </tr>
 <tr>
-<td>2.6.2017</td>
-<td>TBD</td>
-<td><a href="https://github.com/Paleantology/SELUGandT/blob/master/files/EN-DNeasy-Blood--Tissue-Handbook.pdf">Nanopore Prep 1</td>
+<td>2.6.2018</td>
+<td>Nanopore Prep 1</td>
 </tr>
 <tr>
-<td>2.8.2017</td>
-<td>TBD</td>
-<td>Nanopore 2</td>
+<td>2.8.2018</td>
+<td>Nanopore Prep2</td>
 </tr>
 <tr>
-<td>2.9.2017</td>
-<td>----</td>
+<td>2.9.2018</td>
 <td><a href="https://github.com/Paleantology/SELUGandT/blob/master/homework/HW3.md">HW3</td>
 </tr>
 <tr>
-<td>2.13.2017</td>
-<td>Mardi Gras</td>
+<td>2.13.2018</td>
 <td>Enjoy your break</td>
 </tr>
 <tr>
-<td>2.14.2017</td>
-<td>TBD</td>
-<td>Genome Assembly Activity 1</td>
+<td>2.15.2018</td>
+<td>Nanopore library prep 1</td>
 </tr>
 <tr>
-<td>2.20.2017</td>
-<td>TBD</td>
-<td>Genome Assembly Activity 2</td>
+<td>2.20.2018</td>
+<td><a href="https://paleantology.github.io/SELUGandT/15-BigDataTransfer">Reading and Writing Genomic Data</td>
 </tr>
 <tr>
-<td>2.21.2017</td>
-<td>----</td>
-<td>HW 4 Due</td>
+<td>2.22.2018</td>
+<td><a href="https://paleantology.github.io/SELUGandT/16-pore/">In-Depth Assessment of Nanopore Data</td>
 </tr>
 <tr>
-<td>2.27.2017</td>
-<td>TBD</td>
-<td>Genome Assembly Activity 3</td>
+<td>2.27.2018</td>
+<td>><a href="https://paleantology.github.io/SELUGandT/17-short-introduction-to-Python">Python Data Processing</td>
 </tr>
 <tr>
-<td>3.1.2017</td>
-<td>TBD</td>
-<td>Genome Assembly Project Choice</td>
+<td>2.27.2018</td>
+<td>><a href="https://paleantology.github.io/SELUGandT/16-pore">HW4 Due</td>
 </tr>
 <tr>
-<td>3.2.2017</td>
-<td>-----</td>
-<td>HW 5 Due</td>
+<td>3.12.2018</td>
+<td><a href="https://paleantology.github.io/SELUGandT/21-merging-data">Python Data Processing II</td></td>
 </tr>
 <tr>
-<td>3.6.2017</td>
-<td>TBD</td>
+<td>3.26.2018</td>
+<td><a href="https://github.com/Paleantology/SELUGandT/blob/master/_homework/takehome/ComputationalDataPractical.md"> Computational Data Management Practical Due</td>
+</tr>
+<tr>
+<td>3.6.2018</td>
 <td>Report generation / worktime</td>
 </tr>
 <tr>
-<td>3.8.2017</td>
-<td>TBD</td>
+<td>3.8.2018</td>
 <td>Report generation / worktime</td>
 </tr>
 <tr>
-<td>3.9.2017</td>
-<td>-----</td>
+<td>3.9.2018</td>
 <td>HW 6 Due</td>
 </tr>
 <tr>
-<td>3.13.2017</td>
-<td>TBD</td>
+<td>3.13.2018</td>
 <td>Presentations</td>
 </tr>
 <tr>
-<td>3.15.2017</td>
-<td>TBD</td>
+<td>3.15.2018</td>
 <td>Transcriptomics Activity 1</td>
 </tr>
 <tr>
-<td>3.16.2017</td>
-<td>---</td>
+<td>3.16.2018</td>
 <td>HW 7 Due</td>
 </tr>
 <tr>
-<td>3.20.2017</td>
+<td>3.20.2018</td>
 <td>TBD</td>
 <td>Transcriptomics Activity 2</td>
 </tr>
 <tr>
-<td>3.22.2017</td>
-<td>TBD</td>
+<td>3.22.2018</td>
 <td>Transcriptomics Activity 3</td>
 </tr>
 <tr>
-<td>3.23.2017</td>
-<td>---</td>
+<td>3.23.2018</td>
 <td>HW 8 Due</td>
 </tr>
 <tr>
-<td>3.27.2017</td>
-<td>TBD</td>
+<td>3.27.2018</td>
 <td>Transcriptome Project Choice</td>
 </tr>
 <tr>
-<td>3.29.2017</td>
-<td>TBD</td>
+<td>3.29.2018</td>
 <td>Report generation / worktime</td>
 </tr>
 <tr>
-<td>4.10.2017</td>
-<td>TBD</td>
+<td>4.10.2018</td>
 <td>Report generation / worktime</td>
 </tr>
 <tr>
-<td>4.12.2017</td>
-<td>TBD</td>
+<td>4.12.2018</td>
 <td>Presentations</td>
 </tr>
 <tr>
-<td>4.13.2017</td>
-<td>---</td>
+<td>4.13.2018</td>
 <td>HW 9 Due</td>
 </tr>
 <tr>
-<td>4.17.2017</td>
-<td>---</td>
+<td>4.17.2018</td>
 <td>Final Project Choices</td>
 </tr>
 <tr>
-<td>4.19.2017</td>
-<td>---</td>
+<td>4.19.2018</td>
 <td>Final Project Worktime</td>
 </tr>
 <tr>
-<td>4.20.2017</td>
-<td>---</td>
+<td>4.20.2018</td>
 <td>HW 10 Due</td>
 </tr>
 <tr>
-<td>4.24.2017</td>
-<td>---</td>
+<td>4.24.2018</td>
 <td>Final Project Worktime</td>
 </tr>
 <tr>
-<td>4.26.2017</td>
-<td>---</td>
+<td>4.26.2018</td>
 <td>Final Project Worktime</td>
 </tr>
 <tr>
-<td>5.1.2017</td>
-<td>---</td>
+<td>5.1.2018</td>
 <td>Final Project Worktime</td>
 </tr>
 <tr>
-<td>5.3.2017</td>
-<td>---</td>
+<td>5.3.2018</td>
 <td>Wrap-Up</td>
 </tr>
 </tbody>
@@ -370,22 +390,13 @@ download data to your computer and follow any installation instructions.</p>
 </blockquote>
 
   <p>
-    The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
-  </p>
+Schedule is basically out the window, now.  </p>
 
 </div>
 
       
       <footer>
   <div class="row">
-    <div class="col-md-6" align="left">
-      <h4>
-	Copyright &copy; 2016
-	
-	<a href="http://datacarpentry.org">Data Carpentry</a>
-	
-      </h4>
-    </div>
     <div class="col-md-6" align="right">
       <h4>
 	<a href="/">Source</a>
