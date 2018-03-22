@@ -32,9 +32,9 @@ wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR626/SRR
 wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR626/SRR6266483/SRR6266483.sra
 wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR626/SRR6266482/SRR6266482.sra
 wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR626/SRR6262202/SRR6262202.sra
-wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR626/SRR6255799/SRR6255799.sra
-wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR626/SRR6255798/SRR6255798.sra
-wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR626/SRR6255796/SRR6255796.sra
+wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR625/SRR6255799/SRR6255799.sra
+wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR625/SRR6255798/SRR6255798.sra
+wget ftp://ftp-trace.ncbi.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR625/SRR6255796/SRR6255796.sra
 ```
 
 Move these files into the data directory. Each of these files is a different run on a Nanopore or the Illumina. 
@@ -74,7 +74,7 @@ cd kraken
 
 Change directories back into your work directory.
 
-Now we will install one assembler:
+Now we will install an assembler called [MaSURCA](http://www.genome.umd.edu/masurca.html):
 
 ```
 module load gcc
