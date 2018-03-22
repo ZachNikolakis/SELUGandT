@@ -115,7 +115,15 @@ We will call a piece of software out of the SRA toolkit calls fastq-dump. As the
 ```
 /work/amwright/sratoolkit.2.9.0-ubuntu64/bin/fastq-dump data/raw_data/SRR6255797.sra 
 
+```
 
+We can apply out automation lesson to this like so:
+
+```
+for file in *.sra
+do
+/work/USERNAME/sratoolkit.2.9.0-ubuntu64/bin/fastq-dump $file
+done
 ```
 
 Make appropriate adjustments for your data and run them. Start an interactive session before you do - this is a high memory operation. 
