@@ -1,0 +1,19 @@
+#!/bin/bash
+#PBS -q bigmem
+#PBS -l nodes=1:ppn=24
+#PBS -l walltime=12:00:00
+#PBS -N krakenDB  
+#PBS -o kraken.out
+#PBS -j oe
+#PBS -A loni_selu_gt
+#PBS -m abe
+#PBS -M april.wright@selu.edu   
+
+
+#### module load gcc
+##module unload mvapich2/2.0/INTEL-14.0.2
+##module load openmpi/1.8.1/INTEL-14.0.2
+
+datapath=/work/amwright/clownfish_data/data/paired-end
+cd $datapath
+/work/amwright/kraken/kraken --paired SRR6255798_trimmed_1P SRR6255798_trimmed_2P  --check-names  --unclassified-out SRR6255798_filtered  --preload --db /work/amwright/kraken/kraken_large -threads 20
