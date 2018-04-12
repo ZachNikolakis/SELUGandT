@@ -1,0 +1,21 @@
+#!/bin/bash
+#PBS -q single
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=12:00:00
+#PBS -N clean_and_trim 
+#PBS -o kraken.out
+#PBS -j oe
+#PBS -A loni_selu_gt
+#PBS -m abe
+#PBS -M april.wright@selu.edu   
+
+
+#### module load gcc
+##module unload mvapich2/2.0/INTEL-14.0.2
+##module load openmpi/1.8.1/INTEL-14.0.2
+
+datapath=/work/amwright/clownfish_data/
+cd $datapath
+
+./scripts/deinterleave.sh < data/raw_data_illumina/SRR6255798.fastq data/SRR6255798.f.fastq data/SRR6255798.r.fastq
+java -jar  /work/amwright/Trimmomatic-0.36/trimmomatic-0.36.jar PE data/SRR6255798.f.fastq data/SRR6255798.r.fastq -baseout data/paired-end/SRR6255798_trimmed ILLUMINACLIP:paired-end-adapters.txt:2:30:10 MINLEN:100
