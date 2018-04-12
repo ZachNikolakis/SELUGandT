@@ -6,7 +6,7 @@ questions:
  - Setting up data and config files for use with Masurca
 ---
 
-##Masurca
+## Masurca
 
 First, begin an interactive session. Then, move into your owrk directory.
 
@@ -83,7 +83,7 @@ Now, we will call masurca to make the assembly script:
 
 This will, again, create a script called assemble.sh. Change it to long_read_assemble.sh.
 
-###Homework:
+## Homework:
 
 Work in pairs. One of you use the assembly_script.sh to run the short read assembly, one the hybrid assembly. By Tuesday, commit the long read MaSuRCA input file, the short read Masurca file, and a qsub script that will run either (or both) to your copy of the course repo.
 
